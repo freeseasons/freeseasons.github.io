@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://wx.xingda188.com/edcs/ed.html?num=-291.67 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta name="format-detection" content="telephone=yes">
+    <title>我的额度</title>
+    <script type="text/javascript">
+        //引入该flexible.min.js
+        !function (e, t) {
+            function n() {
+                var n = l.getBoundingClientRect().width;
+                t = t || 540, n > t && (n = t);
+                var i = 100 * n / e;
+                r.innerHTML = "html{font-size:" + i + "px;}"
+            }
+
+            var i, d = document, o = window, l = d.documentElement, r = document.createElement("style");
+            if (l.firstElementChild) l.firstElementChild.appendChild(r); else {
+                var a = d.createElement("div");
+                a.appendChild(r), d.write(a.innerHTML), a = null
+            }
+            n(), o.addEventListener("resize", function () {
+                clearTimeout(i), i = setTimeout(n, 300)
+            }, !1), o.addEventListener("pageshow", function (e) {
+                e.persisted && (clearTimeout(i), i = setTimeout(n, 300))
+            }, !1), "complete" === d.readyState ? d.body.style.fontSize = "16px" : d.addEventListener("DOMContentLoaded", function (e) {
+                d.body.style.fontSize = "16px"
+            }, !1)
+        }(750, 750);
+    </script><style>html{font-size:100px;}</style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background: #DAE6F6;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .form {
+            padding-bottom: .5rem;
+        }
+
+        h3 {
+            background: #2196f3;
+            color: white;
+            padding: 0.2rem .4rem;
+            margin: 2rem 1rem;
+            text-align: center;
+        }
+    </style>
+	<script>
+	
+	function GetQueryString(name) {
+			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+			var r = window.location.search.substr(1).match(reg);
+			if(r != null) return decodeURI(r[2]);
+			return null;
+	}
+	</script>
+</head>
+<body style="font-size: 16px;">
+<div id="app">
+<h3>您的额度为<script>  document.write(GetQueryString("num"));</script>万元</h3> 
+<h3>联系方式：民生银行深圳分行 </h3></div>
+</body></html>
